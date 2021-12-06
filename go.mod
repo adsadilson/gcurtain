@@ -1,4 +1,4 @@
-module gcurtain
+module github.com/adsadilson/gcurtain
 
 go 1.17
 

@@ -28,3 +28,13 @@ func TestFeatureValidForUser(t *testing.T) {
 			strconv.FormatBool(returnReceived))
 	}
 }
+
+func TestFeatureValidForPercentage(t *testing.T) {
+	g.Init(uri)
+	returnReceived := g.IsOpen("send_pld_producer_queue")
+	if true != returnReceived {
+		t.Errorf("Type received is different from expected! expected %s and received %s",
+			"true",
+			strconv.FormatBool(returnReceived))
+	}
+}
